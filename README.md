@@ -132,3 +132,15 @@ The obvious approach — read the fields, fill the record — will book perhaps 
 Past that stall there is a shift in how you picture *what one of these documents actually is* — after which the failures stop being a dozen unrelated bugs and become one thing wearing a dozen masks.
 
 We are not going to tell you what that shift is. Arriving at it, unaided, is the exam.
+
+## Run
+
+Run the pipeline with:
+
+```bash
+python main.py
+
+**Input**: documents/*.pdf
+**Output**: output/*.json
+
+
