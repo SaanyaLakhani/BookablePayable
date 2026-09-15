@@ -29,7 +29,6 @@ Where a value has a master-data entry — supplier, tax, buyer org, payment term
 |---|---|
 | **`documents/`** | Real documents, provided as PDFs (mostly page images — extraction via OCR / vision / an LLM is up to you). Some are graded in the open; others are held back. Many currencies, several languages, 1–35 lines each. Not every one is an invoice, and **nothing is labelled or categorised.** |
 | **`erp.py`** | The ERP recompute. Feed it a payable; it returns the gross it will book. Python 3.10+, **standard library only** (nothing to install). See below. |
-| **`example_check.py`** | A minimal usage example: loads a payable JSON and prints `erp_book(...)`'s gross, so you can see which call to make. `python example_check.py [your_payable.json]`. |
 | **`AUTODRAFT_SCHEMA.md`** | The exact record shape your system must output. |
 | **`master_data/`** | Suppliers, tax reference, organisational structure, payment terms, POs — the reference data you resolve document values against to fill the master-data codes. How to match is up to you. **These are sample rows; real masters scale to hundreds of thousands / millions — design matching accordingly.** |
 | **`sample_autodraft.json`** | One worked payable, to show the shape. |
